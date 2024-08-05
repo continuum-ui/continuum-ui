@@ -20,7 +20,8 @@
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "release": "yarn build && yarn changeset publish",
         "prepare": "husky",
-        "commit": "git-cz"
+        "commit": "git-cz",
+        "version:beta": "tsx ./scripts/version.ts --version beta"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.6",
@@ -32,6 +33,7 @@
         "husky": "^9.0.11",
         "lint-staged": "^15.2.7",
         "prettier": "^3.2.5",
+        "tsx": "^4.16.5",
         "turbo": "^2.0.5",
         "typescript": "^5.4.5"
     },
@@ -44,5 +46,6 @@
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
-    }
+    },
+    "version": "0.0.0"
 }
