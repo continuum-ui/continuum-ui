@@ -19,8 +19,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-          cache-dependency-path: |
-            packages/**/node_modules
 
       - name: Install Dependencies
         run: yarn
