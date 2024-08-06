@@ -115,9 +115,16 @@ Configure your css
 }
 ```
 
-## Turborepo Useful Links
+## Deploying Beta
+```bash
+# on the develop branch, automate this with github actions later
 
-## Useful Links
+yarn changeset add
+yarn changeset version
+yarn changeset publish --tag beta
+```
+
+## Turborepo Useful Links
 
 Learn more about the power of Turborepo:
 

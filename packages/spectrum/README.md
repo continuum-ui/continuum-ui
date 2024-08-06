@@ -1,4 +1,4 @@
-# @continuum-ui/components
+# @continuum-ui/spectrum
 
 ![NPM Version](https://img.shields.io/npm/v/@continuum-ui/components)
 

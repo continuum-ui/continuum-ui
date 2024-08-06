@@ -19,9 +19,11 @@
         "lint": "turbo lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "release": "yarn build && yarn changeset publish",
+        "snapshot": "yarn snapshot:version && yarn snapshot:publish",
+        "snapshot:version":"yarn changeset version --snapshot beta",
+        "snapshot:publish":"yarn changeset publish --tag beta",
         "prepare": "husky",
-        "commit": "git-cz",
-        "version:beta": "tsx ./scripts/version.ts --version beta"
+        "commit": "git-cz"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.6",

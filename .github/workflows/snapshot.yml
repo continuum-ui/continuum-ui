@@ -1,9 +1,12 @@
-name: beta
+name: release
 
+# only run if on main branch and there are changes in the components folder
 on:
   push:
     branches:
       - develop
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
@@ -18,6 +21,10 @@ jobs:
         with:
           node-version: 20.x
 
+      - name: get-pkg-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
+
       - name: Install Dependencies
         run: yarn
 
@@ -26,9 +33,9 @@ jobs:
         uses: changesets/action@v1
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn release
-          # commit: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
-          # title: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
+          publish: yarn snapshot
+          commit: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
+          title: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -8,5 +8,5 @@
         "strict": true,
         "jsx": "react-jsx"
     },
-    "include": ["scripts","tailwind.config.ts", "tsup.config.ts"]
+    "include": ["scripts", "tailwind.config.ts", "tsup.config.ts"]
 }

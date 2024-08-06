@@ -1,7 +1,6 @@
 import * as React from "react";
-import { iconVariants } from "../../helpers";
-
-import type { IconProps } from "../../helpers";
+import { iconVariants } from "@continuum-ui/icons/helpers";
+import type { IconProps } from "@continuum-ui/icons/helpers";
 
 export const ChevronUpDownIcon = React.forwardRef<SVGSVGElement, IconProps>(
     ({ className, size, focusable = false, hidden = true, color = "currentColor", ...props }, forwardedRef) => {

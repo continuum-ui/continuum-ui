@@ -129,8 +129,8 @@ const buildIcons = async (module: IconModule, style: IconStyle | WorkflowStyle) 
 (async () => {
     await buildIcons("ui", "large");
     await buildIcons("ui", "medium");
-    // await buildIcons("icons", "large");
-    // await buildIcons("icons", "medium");
-    // await buildIcons("workflow", "18");
-    // await buildIcons("workflow", "24");
+    await buildIcons("icons", "large");
+    await buildIcons("icons", "medium");
+    await buildIcons("workflow", "18");
+    await buildIcons("workflow", "24");
 })();
