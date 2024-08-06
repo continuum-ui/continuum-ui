@@ -1,4 +1,4 @@
-name: release
+name: snapshot
 
 # only run if on main branch and there are changes in the components folder
 on:
@@ -10,7 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Release
+    name: Snapshot
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -28,14 +28,11 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn snapshot
-          commit: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
-          title: 'chore(release): v${{ steps.package-version.outputs.current-version }}'
+      - name: Build packages
+        run: yarn build
+
+      - name: Publish snapshot
+        run: yarn snapshot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
