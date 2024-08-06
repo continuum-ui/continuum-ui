@@ -1,6 +1,6 @@
 {
     "name": "@continuum-ui/utils",
-    "version": "0.0.0-beta-20240806141651",
+    "version": "0.3.0",
     "exports": {
         ".": "./src/index.ts",
         "./styles.css": "./dist/styles.css"

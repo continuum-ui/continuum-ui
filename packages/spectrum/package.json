@@ -1,6 +1,6 @@
 {
     "name": "@continuum-ui/spectrum",
-    "version": "0.0.0-beta-20240806141651",
+    "version": "0.3.0",
     "description": "An easier spectrum component library",
     "author": "Graham Rogers",
     "license": "MIT",
@@ -85,8 +85,8 @@
         "zod": "^3.23.8"
     },
     "devDependencies": {
-        "@continuum-ui/icons": "0.0.0-beta-20240806141651",
-        "@continuum-ui/utils": "0.0.0-beta-20240806141651",
+        "@continuum-ui/icons": "*",
+        "@continuum-ui/utils": "*",
         "@continuum-ui/eslint-config": "*",
         "@continuum-ui/typescript-config": "*",
         "@turbo/gen": "^1.12.4",
