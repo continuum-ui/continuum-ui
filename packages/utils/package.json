@@ -1,6 +1,7 @@
 {
     "name": "@continuum-ui/utils",
     "version": "0.3.0",
+    "license": "MIT",
     "exports": {
         ".": "./src/index.ts",
         "./styles.css": "./dist/styles.css"
@@ -10,6 +11,7 @@
         "registry": "https://registry.npmjs.org"
     },
     "scripts": {
+        "build": "yarn build:css",
         "dev:css": "postcss src/index.css -o dist/styles.css --watch",
         "build:css": "postcss src/index.css -o dist/styles.css",
         "lint": "eslint . --max-warnings 0"

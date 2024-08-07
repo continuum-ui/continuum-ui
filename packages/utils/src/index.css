@@ -72,5 +72,5 @@
 @import "@spectrum-css/well/dist/index-vars.css";
 
 /* our custom fixes */
-@import "./fixes/page.css";
-@import "./fixes/badge.css";
+@import "./css/page.css";
+@import "./css/badge.css";
