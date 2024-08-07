@@ -1,0 +1,4 @@
+/* spectrum defaults to 14px but messes with all other styles outside of it. */
+.spectrum {
+    font-size: unset;
+}

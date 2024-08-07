@@ -20,12 +20,16 @@ export const buttonVariants = cva("spectrum-Button", {
             fill: "spectrum-Button--fill",
             outline: "spectrum-Button--outline",
         },
+        icon: {
+            true: "spectrum-Button--iconOnly",
+        },
         size: {
             sm: "spectrum-Button--sizeS",
             md: "spectrum-Button--sizeM",
             lg: "spectrum-Button--sizeL",
             xl: "spectrum-Button--sizeXL",
         },
+
     },
     defaultVariants: {
         variant: "accent",

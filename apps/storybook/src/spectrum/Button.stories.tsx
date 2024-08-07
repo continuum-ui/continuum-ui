@@ -1,3 +1,4 @@
+import { EditIcon } from "@continuum-ui/icons/workflow/24";
 import { Button } from "@continuum-ui/spectrum/button";
 import type { Meta, StoryObj } from "@storybook/react";
 
@@ -27,5 +28,16 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = {
     args: {
         children: "Button",
+    },
+};
+
+export const WithIcon: Story = {
+    args: {
+        children: (
+            <>
+                <EditIcon />
+                <span></span>
+            </>
+        ),
     },
 };

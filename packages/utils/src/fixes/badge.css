@@ -1,0 +1,57 @@
+/* 
+    .spectrum-Badge-label
+    
+    - the padding inline/block is causing all sorts of issues 
+*/
+.spectrum-Badge span {
+  font-size: var(--mod-badge-font-size, var(--spectrum-badge-font-size));
+  line-height: var(--mod-badge-line-height, var(--spectrum-badge-line-height));
+  padding-inline-end: var(--mod-badge-label-spacing-horizontal, var(--spectrum-badge-label-spacing-horizontal));
+  padding-inline-start: var(--mod-badge-label-spacing-horizontal, var(--spectrum-badge-label-spacing-horizontal));
+  padding-block-start: var(--mod-badge-label-spacing-vertical-top, var(--spectrum-badge-label-spacing-vertical-top));
+  padding-block-end: var(--mod-badge-label-spacing-vertical-bottom, var(--spectrum-badge-label-spacing-vertical-bottom));
+  color: var(--mod-badge-label-icon-color, var(--spectrum-badge-label-icon-color));
+}
+
+.spectrum-Badge span:lang(ja),
+.spectrum-Badge span:lang(ko),
+.spectrum-Badge span:lang(zh) {
+  line-height: var(--mod-badge-line-height-cjk, var(--spectrum-badge-line-height-cjk));
+}
+
+.spectrum-Badge svg + span {
+  padding-inline-start: 0;
+}
+
+.spectrum-Badge svg {
+  block-size: var(--mod-badge-workflow-icon-size, var(--spectrum-badge-workflow-icon-size));
+  inline-size: var(--mod-badge-workflow-icon-size, var(--spectrum-badge-workflow-icon-size));
+  flex: 0 0 var(--mod-badge-workflow-icon-size, var(--spectrum-badge-workflow-icon-size));
+  padding-inline-start: var(--mod-badge-icon-spacing-horizontal, var(--spectrum-badge-icon-spacing-horizontal));
+  padding-inline-end: var(--mod-badge-icon-text-spacing, var(--spectrum-badge-icon-text-spacing));
+  padding-block-start: var(--mod-badge-icon-spacing-vertical-top, var(--spectrum-badge-icon-spacing-vertical-top));
+  padding-block-end: var(--mod-badge-icon-spacing-vertical-top, var(--spectrum-badge-icon-spacing-vertical-top));
+  color: var(--mod-badge-label-icon-color, var(--spectrum-badge-label-icon-color));
+}
+
+.spectrum-Badge-icon--no-label {
+  padding-inline-start: var(--mod-badge-icon-only-spacing-horizontal, var(--spectrum-badge-icon-only-spacing-horizontal));
+  padding-inline-end: var(--mod-badge-icon-only-spacing-horizontal, var(--spectrum-badge-icon-only-spacing-horizontal));
+}
+/* 
+    .spectrum-Badge-icon
+    
+*/
+.spectrum-Badge svg {
+    /* padding-inline-* is causing problems on icons */
+    padding: 0px;
+    margin: 10px;
+}
+
+.spectrum--medium {
+    --mod-badge-label-spacing-vertical-bottom: 6px;
+}
+
+.spectrum--large {
+    --mod-badge-label-spacing-vertical-bottom: 8px;
+}
