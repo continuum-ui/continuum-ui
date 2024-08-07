@@ -1,32 +1,75 @@
-/* <!-- Include global variables first --> */
-/* @import "@spectrum-css/vars/dist/spectrum-global.css"; */
-
-/* <!-- Include only the scales your application needs --> */
-/* @import "@spectrum-css/vars/dist/spectrum-medium.css";
-@import "@spectrum-css/vars/dist/spectrum-large.css"; */
-
-/* <!-- Include only the colorstops your application needs --> */
-/* @import "@spectrum-css/vars/dist/spectrum-light.css";
-@import "@spectrum-css/vars/dist/spectrum-dark.css"; */
-
 /* <!-- Include global tokens depedency first --> */
 @import "@spectrum-css/tokens/dist/index.css";
 
 /* <!-- Include index-vars.css for all components you need --> */
 @import "@spectrum-css/actionbutton/dist/index-vars.css";
+@import "@spectrum-css/accordion/dist/index-vars.css";
+@import "@spectrum-css/actionbar/dist/index-vars.css";
+@import "@spectrum-css/actionbutton/dist/index-vars.css";
+@import "@spectrum-css/actiongroup/dist/index-vars.css";
 /* css isn't availble from package... */
 /* @import "@spectrum-css/actionmenu/dist/index-vars.css"; */
+@import "@spectrum-css/alertbanner/dist/index-vars.css";
+@import "@spectrum-css/alertdialog/dist/index-vars.css";
+@import "@spectrum-css/avatar/dist/index-vars.css";
 @import "@spectrum-css/badge/dist/index-vars.css";
+@import "@spectrum-css/breadcrumb/dist/index-vars.css";
 @import "@spectrum-css/button/dist/index-vars.css";
+@import "@spectrum-css/buttongroup/dist/index-vars.css";
+@import "@spectrum-css/calendar/dist/index-vars.css";
+@import "@spectrum-css/card/dist/index-vars.css";
 @import "@spectrum-css/checkbox/dist/index-vars.css";
+@import "@spectrum-css/combobox/dist/index-vars.css";
+@import "@spectrum-css/contextualhelp/dist/index-vars.css";
+@import "@spectrum-css/datepicker/dist/index-vars.css";
+@import "@spectrum-css/dialog/dist/index-vars.css";
 @import "@spectrum-css/divider/dist/index-vars.css";
+@import "@spectrum-css/dropindicator/dist/index-vars.css";
+@import "@spectrum-css/dropzone/dist/index-vars.css";
+@import "@spectrum-css/fieldgroup/dist/index-vars.css";
+@import "@spectrum-css/fieldlabel/dist/index-vars.css";
+@import "@spectrum-css/floatingactionbutton/dist/index-vars.css";
+@import "@spectrum-css/helptext/dist/index-vars.css";
 @import "@spectrum-css/icon/dist/index-vars.css";
+@import "@spectrum-css/illustratedmessage/dist/index-vars.css";
+@import "@spectrum-css/infieldbutton/dist/index-vars.css";
+@import "@spectrum-css/inlinealert/dist/index-vars.css";
+@import "@spectrum-css/link/dist/index-vars.css";
+@import "@spectrum-css/logicbutton/dist/index-vars.css";
+@import "@spectrum-css/menu/dist/index-vars.css";
+@import "@spectrum-css/miller/dist/index-vars.css";
+@import "@spectrum-css/modal/dist/index-vars.css";
+@import "@spectrum-css/opacitycheckerboard/dist/index-vars.css";
 @import "@spectrum-css/page/dist/index-vars.css";
+@import "@spectrum-css/pagination/dist/index-vars.css";
+@import "@spectrum-css/picker/dist/index-vars.css";
+@import "@spectrum-css/pickerbutton/dist/index-vars.css";
+@import "@spectrum-css/popover/dist/index-vars.css";
+@import "@spectrum-css/progressbar/dist/index-vars.css";
+@import "@spectrum-css/progresscircle/dist/index-vars.css";
+@import "@spectrum-css/radio/dist/index-vars.css";
+@import "@spectrum-css/rating/dist/index-vars.css";
+@import "@spectrum-css/search/dist/index-vars.css";
+@import "@spectrum-css/sidenav/dist/index-vars.css";
+@import "@spectrum-css/slider/dist/index-vars.css";
+@import "@spectrum-css/statuslight/dist/index-vars.css";
+@import "@spectrum-css/steplist/dist/index-vars.css";
+@import "@spectrum-css/stepper/dist/index-vars.css";
+@import "@spectrum-css/swatch/dist/index-vars.css";
+@import "@spectrum-css/swatchgroup/dist/index-vars.css";
+@import "@spectrum-css/switch/dist/index-vars.css";
 @import "@spectrum-css/table/dist/index-vars.css";
 @import "@spectrum-css/tabs/dist/index-vars.css";
+@import "@spectrum-css/tag/dist/index-vars.css";
+@import "@spectrum-css/taggroup/dist/index-vars.css";
 @import "@spectrum-css/textfield/dist/index-vars.css";
+@import "@spectrum-css/thumbnail/dist/index-vars.css";
+@import "@spectrum-css/toast/dist/index-vars.css";
 @import "@spectrum-css/tooltip/dist/index-vars.css";
+@import "@spectrum-css/tray/dist/index-vars.css";
+@import "@spectrum-css/treeview/dist/index-vars.css";
 @import "@spectrum-css/typography/dist/index-vars.css";
+@import "@spectrum-css/well/dist/index-vars.css";
 
 /* our custom fixes */
 @import "./fixes/page.css";
